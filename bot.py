@@ -32,4 +32,13 @@ def echo_message(message):
     bot.reply_to(message, message.text)
 
 
+
+@bot.message_handler(commands=['info'])
+def send_info(message):
+    bot.reply_to(message, """Привет! Я умею отвечать на твои сообщения, а еще реагировать на команды:
+                 /help
+                 /start
+                 /info""")
+
+
 bot.infinity_polling()
