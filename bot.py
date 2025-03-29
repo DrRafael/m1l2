@@ -3,6 +3,8 @@ import telebot
 
 bot = telebot.TeleBot(TOKEN)
 
+bot1 = telebot.TeleBot(TOKEN)
+
 
 # Handle '/start' and '/help'
 @bot.message_handler(commands=['help', 'start'])
